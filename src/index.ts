@@ -6,8 +6,6 @@ import staticRoutes = require("./routes/static");
 
 var getPort = Promise.promisify(require("portfinder").getPort);
 
-var publicPath = path.join(__dirname, "public/");
-
 var server = new Hapi.Server();
 
 getPort().then((port: number) => {
@@ -16,16 +14,7 @@ getPort().then((port: number) => {
         port: port
     });
 
-    server.route({
-        method: 'GET',
-        path: '/{param*}',
-        handler: {
-            directory:{
-                path: publicPath
-            }
-        }
-    });
-
+    server.route(staticRoutes.public);
     server.route(staticRoutes.knockout);
     server.route(staticRoutes.bootstrap);
 
