@@ -15,6 +15,7 @@
     "files": [
         "src/index.ts",
         "src/logger.ts",
+        "src/public/components/menu.ts",
         "src/public/scripts/config.ts",
         "src/routes/static.ts",
         "src/routes/static/bootstrap.ts",

@@ -1,3 +1,8 @@
 require.config({
-    baseUrl: '../components'
+    baseUrl: '../'
 });
+ko.components.register("ko-menu", {
+    viewModel: function () { },
+    template: { require: "text!./components/menu.html" }
+});
+ko.applyBindings();
