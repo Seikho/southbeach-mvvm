@@ -1,24 +1,10 @@
 var path = require("path");
-var routes = [];
-routes.push({
+module.exports = {
     method: 'GET',
-    path: '/bootstrap.css',
+    path: '/bootstrap/{param*}',
     handler: {
-        file: path.join(__dirname, "../../../node_modules/bootstrap/dist/css/bootstrap.css")
+        directory: {
+            path: path.join(__dirname, "../../../node_modules/bootstrap/dist/")
+        }
     }
-});
-routes.push({
-    method: 'GET',
-    path: '/bootstrap.js',
-    handler: {
-        file: path.join(__dirname, "../../../node_modules/bootstrap/dist/js/bootstrap.js")
-    }
-});
-routes.push({
-    method: 'GET',
-    path: '/fonts/{param*}',
-    handler: {
-        file: path.join(__dirname, "../../../node_modules/bootstrap/dist/fonts/")
-    }
-});
-module.exports = routes;
+};
