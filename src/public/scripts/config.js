@@ -7,4 +7,7 @@ ko.components.register("ko-menu", {
 ko.components.register("ko-footer", {
     template: { require: "text!./components/footer.html" }
 });
+ko.components.register("ko-content", {
+    template: { require: "text!./components/content.html" }
+});
 ko.applyBindings();
