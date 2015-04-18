@@ -22,6 +22,8 @@
         "src/typings/bluebird/bluebird.d.ts",
         "src/typings/chalk/chalk.d.ts",
         "src/typings/hapi/hapi.d.ts",
+        "src/typings/jquery/jquery.d.ts",
+        "src/typings/knex/knex.d.ts",
         "src/typings/knockout/knockout.d.ts",
         "src/typings/node/node.d.ts",
         "src/typings/tsd.d.ts"
