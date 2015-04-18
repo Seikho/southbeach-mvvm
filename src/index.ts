@@ -14,9 +14,7 @@ getPort().then((port: number) => {
         port: port
     });
 
-    server.route(staticRoutes.public);
-    server.route(staticRoutes.knockout);
-    server.route(staticRoutes.bootstrap);
+    for (var route in staticRoutes) server.route(staticRoutes[route]);
 
     server.start(() => log.info("Web server listening on port " + port));
 });
