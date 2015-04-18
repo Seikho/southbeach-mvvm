@@ -1,0 +1,25 @@
+{
+    "version": "1.4.1",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false
+    },
+    "filesGlob": [
+        "src/**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "src/index.ts",
+        "src/logger.ts",
+        "src/typings/bluebird/bluebird.d.ts",
+        "src/typings/chalk/chalk.d.ts",
+        "src/typings/hapi/hapi.d.ts",
+        "src/typings/knockout/knockout.d.ts",
+        "src/typings/node/node.d.ts",
+        "src/typings/tsd.d.ts"
+    ]
+}
