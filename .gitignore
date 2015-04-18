@@ -1,4 +1,6 @@
 node_modules/
 src/typings/tsd.d.ts
 *.map
+*.log
+*.db
 

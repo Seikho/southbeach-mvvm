@@ -2,6 +2,8 @@ import Hapi = require("hapi");
 import Promise = require("bluebird");
 import path = require("path");
 import log = require("./logger");
+import staticRoutes = require("./routes/static");
+
 var getPort = Promise.promisify(require("portfinder").getPort);
 
 var publicPath = path.join(__dirname, "public/");
@@ -25,7 +27,8 @@ getPort().then((port: number) => {
         }
     });
 
-    server.start(() => {
-        log.info("Server listening on port " + port);
-    });
+    server.route(staticRoutes.knockout);
+    server.route(staticRoutes.bootstrap);
+
+    server.start(() => log.info("Web server listening on port " + port));
 });

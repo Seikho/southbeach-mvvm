@@ -15,6 +15,9 @@
     "files": [
         "src/index.ts",
         "src/logger.ts",
+        "src/routes/static.ts",
+        "src/routes/static/bootstrap.ts",
+        "src/routes/static/knockout.ts",
         "src/typings/bluebird/bluebird.d.ts",
         "src/typings/chalk/chalk.d.ts",
         "src/typings/hapi/hapi.d.ts",
