@@ -5,7 +5,6 @@ var log = require("./logger");
 var staticRoutes = require("./routes/static");
 var getPort = Promise.promisify(require("portfinder").getPort);
 var publicPath = path.join(__dirname, "public/");
-log.debug(publicPath);
 var server = new Hapi.Server();
 getPort().then(function (port) {
     server.connection({

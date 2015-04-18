@@ -5,7 +5,7 @@ export = routes;
 var routes: Hapi.IRouteConfiguration[] = [];
 routes.push({
     method: 'GET',
-    path: 'bootstrap.css',
+    path: '/bootstrap.css',
     handler: {
         file: path.join(__dirname, "../../../node_modules/bootstrap/dist/css/bootstrap.css")
     }
@@ -13,7 +13,7 @@ routes.push({
 
 routes.push({
     method: 'GET',
-    path: 'bootstrap.js',
+    path: '/bootstrap.js',
     handler: {
         file: path.join(__dirname, "../../../node_modules/bootstrap/dist/js/bootstrap.js")
     }
