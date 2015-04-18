@@ -4,8 +4,11 @@ require.config({
 });
 
 ko.components.register("ko-menu", {
-    viewModel:  () => { },
     template: { require: "text!./components/menu.html" }
+});
+
+ko.components.register("ko-footer", {
+    template: { require: "text!./components/footer.html" }
 });
 
 ko.applyBindings();
