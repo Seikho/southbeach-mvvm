@@ -1,7 +1,10 @@
-.banner-pane {
+
+#banner-pane {
     width: 100%;
     height: 120px;
+    background-color: #000066;
 }
 body {
-    background-color: #00f;
+    background-color: #0000aa;
+    color: white;SS
 }

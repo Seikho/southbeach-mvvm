@@ -17,6 +17,7 @@
         "src/logger.ts",
         "src/routes/static.ts",
         "src/routes/static/bootstrap.ts",
+        "src/routes/static/cajon.ts",
         "src/routes/static/jquery.ts",
         "src/routes/static/knockout.ts",
         "src/routes/static/public.ts",
