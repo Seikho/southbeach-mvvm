@@ -15,4 +15,9 @@ ko.components.register("ko-content", {
     template: { require: "text!./components/content.html" }
 });
 
+ko.components.register("ko-panel", {
+    viewModel: { require: "./components/panel.js" },
+    template: { require: "text!./components/panel.html "}
+})
+
 ko.applyBindings();

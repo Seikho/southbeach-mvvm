@@ -15,6 +15,7 @@
     "files": [
         "src/index.ts",
         "src/logger.ts",
+        "src/public/components/panel.ts",
         "src/public/scripts/config.ts",
         "src/routes/static.ts",
         "src/routes/static/bootstrap.ts",
@@ -28,7 +29,6 @@
         "src/typings/jquery/jquery.d.ts",
         "src/typings/knex/knex.d.ts",
         "src/typings/knockout/knockout.d.ts",
-        "src/typings/node/node.d.ts",
-        "src/typings/tsd.d.ts"
+        "src/typings/node/node.d.ts"
     ]
 }
