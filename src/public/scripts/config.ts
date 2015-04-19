@@ -16,7 +16,6 @@ ko.components.register("ko-content", {
 });
 
 ko.components.register("ko-panel", {
-    viewModel: { require: "./components/panel.js" },
     template: { require: "text!./components/panel.html "}
 })
 
