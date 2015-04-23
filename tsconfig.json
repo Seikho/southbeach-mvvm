@@ -22,6 +22,8 @@
         "src/routes/static/jquery.ts",
         "src/routes/static/knockout.ts",
         "src/routes/static/public.ts",
+        "src/store/index.ts",
+        "src/store/init.ts",
         "src/typings/bluebird/bluebird.d.ts",
         "src/typings/chalk/chalk.d.ts",
         "src/typings/hapi/hapi.d.ts",
@@ -29,6 +31,7 @@
         "src/typings/knex/knex.d.ts",
         "src/typings/knockout/knockout.d.ts",
         "src/typings/node/node.d.ts",
-        "src/typings/southbeach/southbeach.d.ts"
+        "src/typings/southbeach/southbeach.d.ts",
+        "src/typings/tsd.d.ts"
     ]
 }
