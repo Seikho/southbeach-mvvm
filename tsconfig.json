@@ -18,6 +18,7 @@
         "src/public/scripts/config.ts",
         "src/routes/all.ts",
         "src/routes/blog/get.ts",
+        "src/routes/blog/getEntryFromPayload.ts",
         "src/routes/blog/post.ts",
         "src/routes/blog/put.ts",
         "src/routes/blog/routes.ts",
