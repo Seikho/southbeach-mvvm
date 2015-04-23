@@ -24,6 +24,7 @@
         "src/routes/static/public.ts",
         "src/store/db.ts",
         "src/store/index.ts",
+        "src/store/init.ts",
         "src/typings/bluebird/bluebird.d.ts",
         "src/typings/chalk/chalk.d.ts",
         "src/typings/hapi/hapi.d.ts",
