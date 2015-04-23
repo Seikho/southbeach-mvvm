@@ -4,6 +4,7 @@ import path = require("path");
 import log = require("./logger");
 import staticRoutes = require("./routes/static");
 import initialise = require("./store/index");
+import routes = require("./routes/all");
 
 var getPort = Promise.promisify(require("portfinder").getPort);
 
@@ -17,6 +18,7 @@ getPort().then((port: number) => {
 
     for (var route in staticRoutes) server.route(staticRoutes[route]);
 
+    server.route(routes);
     server.start(() => log.info("Web server listening on port " + port));
     initialise();
 });
