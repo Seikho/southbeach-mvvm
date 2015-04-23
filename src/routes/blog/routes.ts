@@ -5,7 +5,7 @@ import put = require("./put");
 export = routes;
 
 var routes = {
-    get: get,
-    post: post,
-    put: put
+    read: get,
+    update: post,
+    delete: put
 }

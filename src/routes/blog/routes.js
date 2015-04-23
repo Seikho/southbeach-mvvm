@@ -2,8 +2,8 @@ var post = require("./post");
 var get = require("./get");
 var put = require("./put");
 var routes = {
-    get: get,
-    post: post,
-    put: put
+    read: get,
+    update: post,
+    delete: put
 };
 module.exports = routes;

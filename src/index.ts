@@ -15,7 +15,7 @@ getPort().then((port: number) => {
         port: port
     });
 
-    server.route(routes);
+    for (var route in routes) server.route(routes[route]);
 
     server.start(() => log.info("Web server listening on port " + port));
     initialise();

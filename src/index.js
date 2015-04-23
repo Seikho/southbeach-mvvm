@@ -9,7 +9,8 @@ getPort().then(function (port) {
     server.connection({
         port: port
     });
-    server.route(routes);
+    for (var route in routes)
+        server.route(routes[route]);
     server.start(function () { return log.info("Web server listening on port " + port); });
     initialise();
 });
